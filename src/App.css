@@ -1,0 +1,563 @@
+/* ========== JELLY BUTTON STYLES (glass-button) ========== */
+.btn-jelly {
+  position: relative;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition:
+    transform 220ms ease-in-out,
+    box-shadow 220ms ease-in-out,
+    filter 220ms ease-in-out;
+  background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02),
+      transparent
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(
+      rgba(99, 102, 241, 0.8),
+      rgba(79, 70, 229, 0.4)
+    );
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 15px rgba(99, 102, 241, 0.4);
+}
+.btn-jelly::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 35%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.08) 100%);
+  border-radius: 9999px 9999px 0 0;
+  pointer-events: none;
+}
+.btn-jelly:hover {
+  transform: translate3d(0, -2px, 0) scale(1.03);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 5px 15px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(99, 102, 241, 0.15);
+  filter: brightness(1.03);
+}
+.btn-jelly:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.btn-jelly-danger {
+  background: linear-gradient(180deg, #f87171 0%, #dc2626 50%, #b91c1c 100%);
+  box-shadow:
+    0 4px 14px 0 rgba(220, 38, 38, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+}
+.btn-jelly-danger:hover {
+  box-shadow:
+    0 6px 20px 0 rgba(220, 38, 38, 0.5),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-jelly-secondary {
+  background: linear-gradient(180deg, #94a3b8 0%, #64748b 50%, #475569 100%);
+  box-shadow:
+    0 4px 14px 0 rgba(71, 85, 105, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+.btn-jelly-secondary:hover {
+  box-shadow:
+    0 6px 20px 0 rgba(71, 85, 105, 0.5),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+}
+
+.btn-jelly-success {
+  background: linear-gradient(180deg, #4ade80 0%, #22c55e 50%, #16a34a 100%);
+  box-shadow:
+    0 4px 14px 0 rgba(34, 197, 94, 0.4),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
+}
+.btn-jelly-success:hover {
+  box-shadow:
+    0 6px 20px 0 rgba(34, 197, 94, 0.5),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-jelly-icon {
+  background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02),
+      transparent
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    linear-gradient(
+      rgba(99, 102, 241, 0.8),
+      rgba(79, 70, 229, 0.4)
+    );
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 15px rgba(99, 102, 241, 0.4);
+}
+.btn-jelly-icon:hover {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 5px 15px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(99, 102, 241, 0.15);
+}
+
+/* ========== SEARCH BAR (glass-panel) ========== */
+.search-bar-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02),
+      transparent
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    rgba(30, 41, 59, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 15px rgba(99, 102, 241, 0.3);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+}
+.search-bar-wrapper .search-bar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  color: #818CF8;
+}
+.search-bar-wrapper .search-bar-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 16px 12px 8px;
+  border: none;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.5);
+  color: #F8FAFC;
+  font-size: 1rem;
+  outline: none;
+}
+.search-bar-wrapper .search-bar-input::placeholder {
+  color: #818CF8;
+  opacity: 0.8;
+}
+.search-bar-wrapper:focus-within {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Search bar without icon (single input with glow) */
+.search-bar-standalone {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9999px;
+  background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02),
+      transparent
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    rgba(30, 41, 59, 0.5);
+  color: #F8FAFC;
+  font-size: 1rem;
+  outline: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 15px rgba(99, 102, 241, 0.3);
+}
+.search-bar-standalone::placeholder {
+  color: #818CF8;
+  opacity: 0.8;
+}
+.search-bar-standalone:focus {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* ========== GLOBAL LAYOUT & TYPOGRAPHY ========== */
+
+/* Etched look for major section headings */
+.heading-etched,
+h2.heading-etched,
+h3.heading-etched {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #020617;
+  color: #F8FAFC;
+  font-family: "Bodoni Moda", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+  box-shadow:
+    inset 0 0 120px rgba(0, 0, 0, 0.9),
+    inset 0 -40px 80px rgba(15, 23, 42, 0.95);
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+/* Subtle grain + glow overlays */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -40px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.08;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.35) 1px, transparent 0),
+    radial-gradient(circle at 3px 3px, rgba(15, 23, 42, 0.45) 1px, transparent 0);
+  background-size: 6px 6px, 10px 10px;
+  mix-blend-mode: soft-light;
+}
+
+#root::before {
+  content: "";
+  position: fixed;
+  inset: 12% 10%;
+  background:
+    radial-gradient(circle at center, rgba(248, 250, 252, 0.16), transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ========== APP TITLE (3D Midnight Glass) ========== */
+
+.app-title {
+  position: fixed;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 50;
+  padding: 0.7rem 2rem;
+  border-radius: 999px;
+  background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02),
+      transparent
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.02)
+    ),
+    rgba(30, 41, 59, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 5px 15px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  font-size: 2.2rem;
+  letter-spacing: 0.02em;
+  color: #F8FAFC;
+}
+
+.app-title span {
+  display: inline-block;
+  font-family: "Lobster", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 400;
+}
+
+/* ========== 3D GENRE CAROUSEL UTILITIES ========== */
+
+@keyframes spinCarousel {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinCarousel 20s linear infinite;
+}
+
+/* ========== GLASS RIM LIGHTING (reusable utilities) ========== */
+/* Outer rim: subtle glass edge highlight + material thickness */
+.glass-rim {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+/* Inner top-left edge light */
+.glass-edge-light {
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.15);
+}
+/* Soft reflective sheen overlay */
+.glass-reflection {
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02),
+    transparent
+  );
+}
+
+/* ========== 3D MIDNIGHT GLASS SURFACES ========== */
+/* glass-panel: modals, shells, floating containers */
+.glass-shell {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* glass-card: cards, panels */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition:
+    transform 240ms ease-in-out,
+    box-shadow 240ms ease-in-out,
+    border-color 240ms ease-in-out;
+}
+
+.glass-card:hover {
+  transform: translate3d(0, -6px, 0) scale(1.04);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 20px 60px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* Page shell fade-in */
+.page-shell {
+  animation: pageFadeIn 0.6s ease-in-out;
+  padding-block: 3.5rem;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 3D genre carousel enhancements */
+.genre-carousel {
+  perspective: 1400px;
+  position: relative;
+  box-shadow: 0 0 120px rgba(99, 102, 241, 0.12);
+}
+
+.genre-carousel::before {
+  content: "";
+  position: absolute;
+  inset: 14% 8%;
+  background:
+    radial-gradient(circle at center, rgba(251, 191, 36, 0.18), transparent 60%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.genre-carousel::after {
+  content: "";
+  position: absolute;
+  inset: -10%;
+  box-shadow: 0 0 120px rgba(0, 0, 0, 0.95) inset;
+  pointer-events: none;
+}
+
+/* Shared card parallax tilt */
+.card-parallax {
+  transform-style: preserve-3d;
+  transition:
+    transform 220ms ease-in-out,
+    box-shadow 220ms ease-in-out,
+    filter 220ms ease-in-out;
+}
+
+.card-parallax:hover {
+  transform: translate3d(0, -6px, 0) scale(1.03) rotateX(4deg) rotateY(-4deg);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.15),
+    0 20px 50px rgba(0, 0, 0, 0.5),
+    0 5px 15px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(99, 102, 241, 0.15);
+  filter: brightness(1.02);
+}
+
+.card-parallax:hover img {
+  transform: scale(1.04) translateY(-2px);
+}
+
+/* glass-card--soft: softer variant */
+.glass-card--soft {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.20),
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* glass-pill: small floating containers / icon wrappers */
+.glass-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.25),
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ========== VINTAGE STICKERS / PAPER CUTOUTS ========== */
+.reading-sticker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  line-height: 1;
+  opacity: 0.2;
+  /* Monochromatic styling matching the midnight 3D glass palette */
+  filter: drop-shadow(0 0 12px rgba(129, 140, 248, 0.5)) grayscale(100%) brightness(180%) sepia(100%) hue-rotate(190deg) saturate(400%);
+  pointer-events: none;
+  z-index: 0;
+  animation: floatSticker 8s ease-in-out infinite;
+}
+
+.reading-sticker:nth-child(even) {
+  animation-direction: reverse;
+  animation-duration: 10s;
+}
+
+@keyframes floatSticker {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+.reading-sticker--bookmark::after { content: "🗝️"; }
+.reading-sticker--openbook::after { content: "📖"; }
+.reading-sticker--ticket::after { content: "⏳"; }
+.reading-sticker--note::after { content: "📜"; }
+.reading-sticker--feather::after { content: "🖋️"; }
+.reading-sticker--watch::after { content: "🕰️"; }
