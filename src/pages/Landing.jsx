@@ -174,7 +174,7 @@ export default function Landing() {
             <h3 className="text-2xl font-bold text-[#F8FAFC] heading-etched">AI Recommendations</h3>
           </div>
           <p className="text-[#818CF8] text-lg leading-relaxed">
-            Our smart engine analyzes your reading history to suggest books you'll actually love.
+            Turn your favorite movies and genres into your next great read with AI-powered recommendations.
           </p>
         </div>
         
