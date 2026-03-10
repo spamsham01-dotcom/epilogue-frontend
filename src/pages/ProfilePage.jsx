@@ -129,6 +129,11 @@ export default function ProfilePage() {
     }
   };
 
+  const handleLogout = () => {
+  localStorage.removeItem("token");
+  navigate("/");
+};
+
   const updateBookStatus = async (book, newStatus) => {
     try {
       await API.post("/reading", {
@@ -264,6 +269,13 @@ export default function ProfilePage() {
                       >
                         Delete Account
                       </button>
+
+                      <button
+  onClick={handleLogout}
+  className="btn-jelly btn-jelly-secondary w-full px-4 py-2"
+>
+  Logout
+</button>
                     </div>
                   </>
                 ) : (
